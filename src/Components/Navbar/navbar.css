@@ -1,0 +1,38 @@
+.nav_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 60px;
+    height: 80px;
+    align-items: center;
+    background-color: rgb(63, 57, 57);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #FF4655;
+}
+
+.nav_links a {
+    margin: 0 20px;
+    color: #FF4655;
+    font-size: large;
+}
+
+.navbar_logo {
+    height: 40px;
+}
+
+.homepage_logo {
+    font-size: 35px;
+}
+
+.homepage_logo a {
+    color: #FF4655;
+}

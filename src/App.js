@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "antd/dist/antd.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Agents from "./Components/Agents/Agents";
+import Maps from "./Components/Maps/Maps";
+import Weapons from "./Components/Weapons/Weapons";
+import HomePage from "./Components/HomePage";
+import AgentsDetails from "./Components/AgentsDetails/AgentsDetails";
+import "../src/Components/Navbar/navbar.css";
+import "./style.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <div>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Routes>
+          <Route path="/agents" element={<Agents />}></Route>
+          <Route path="/maps" element={<Maps />}></Route>
+          <Route path="/weapons" element={<Weapons />}></Route>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/agents/:displayName" element={<AgentsDetails />}></Route>
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 

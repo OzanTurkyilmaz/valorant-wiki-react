@@ -1,0 +1,123 @@
+.play_container {
+    height: 700px;
+    width: 100%;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltdf3b1dfa11162976/6204d992dccd631381dd71f2/keyart-showcase-7851a703d28104a8ee4dc63a441aade7.jpg)
+}
+
+.play_btn {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_img {
+    width: 100%;
+}
+
+.agents_container {
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    color: white;
+    background-image: url(https://www.sanalsayfalar.com/wp-content/uploads/2020/10/Valorant-pictures-and-wallpapers-21.jpg);
+}
+
+.agents_box {
+    height: 700px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.agents_container h1,h4{
+    color: white;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.agents_container h1 {
+    font-size: 70px;
+}
+
+.agents_container h4 {
+    font-size: 30px;
+}
+
+.agents_container p {
+    width: 50%;
+}
+
+.agents_btn {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.maps_container {
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    color: white;
+    background-image: url(https://mocah.org/mocahbig/391500-valorant-game-fracture-background-4k-pc-wallpaper.jpg);
+}
+
+.maps_box {
+    margin-left: 20px;
+}
+
+.maps_container h1 {
+    font-size: 70px;
+}
+
+.maps_container h1,h4{
+    color: white;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.maps_btn {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.maps_container p {
+    width: 50%;
+}
+
+.maps_container h4 {
+    font-size: 30px;
+}
+
+
+
+
+

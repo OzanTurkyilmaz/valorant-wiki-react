@@ -1,0 +1,43 @@
+.agents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.agents_card {
+    height: 600px;
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img_container {
+    height: 300px;
+    width: 300px;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.agent_img {
+    height: 300px;
+    width: 300px;
+}
+
+.agent_name {
+    color: brown;
+}
+
+.agent_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    overflow: hidden;
+    align-items: center;
+}
