@@ -5,8 +5,8 @@ import Maps from "./Components/Maps/Maps";
 import Weapons from "./Components/Weapons/Weapons";
 import HomePage from "./Components/HomePage";
 import AgentsDetails from "./Components/AgentsDetails/AgentsDetails";
-import "../src/Components/Navbar/navbar.css";
-import "./style.css";
+import "../src/Components/Navbar/navbar.scss";
+import "./main.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 

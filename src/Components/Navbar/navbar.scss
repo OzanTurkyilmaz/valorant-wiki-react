@@ -1,4 +1,7 @@
-.nav_container {
+@import "../../variables.scss";
+
+.nav {
+  &_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,29 +13,28 @@
     position: -webkit-sticky;
     top: 0;
     z-index: 1;
-}
-
-.nav_links {
+  }
+  &_links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: #FF4655;
-}
+    color: $primary-color;
 
-.nav_links a {
-    margin: 0 20px;
-    color: #FF4655;
-    font-size: large;
+    a {
+      margin: 0 20px;
+      color: $primary-color;
+      font-size: large;
+    }
+  }
 }
 
 .navbar_logo {
-    height: 40px;
+  height: 40px;
 }
 
 .homepage_logo {
-    font-size: 35px;
-}
-
-.homepage_logo a {
-    color: #FF4655;
+  font-size: 35px;
+  a {
+    color: $primary-color;
+  }
 }

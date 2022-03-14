@@ -1,0 +1,55 @@
+@import "../../variables.scss";
+
+.agents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &_card {
+    height: 600px;
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: $backgroun-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      background-color: rgb(217, 243, 243);
+    }
+  }
+}
+
+.img_container {
+  height: 300px;
+  width: 300px;
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.agent {
+  &_img {
+    height: 300px;
+    width: 300px;
+    &:hover {
+      height: 350px;
+      width: 350px;
+    }
+  }
+
+  &_name {
+    color: $primary-color;
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    overflow: hidden;
+    align-items: center;
+  }
+}

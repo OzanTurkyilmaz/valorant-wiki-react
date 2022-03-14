@@ -17,7 +17,7 @@ export default function AgentsDetails() {
   const thisAgent = agents?.find((agent) => agent.displayName === displayName);
 
   return loading ? <Spin size="large" /> : 
-    <div className="thisAgent_container">
+    <div key={thisAgent?.displayName} className="thisAgent_container">
       <div className="img_box" style={{
             backgroundImage:
             `url(${thisAgent?.background})`
