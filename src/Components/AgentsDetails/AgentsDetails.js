@@ -1,7 +1,7 @@
 import { Spin } from "antd";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import './AgentsDetails.css'
+import './AgentsDetails.scss'
 
 export default function AgentsDetails() {
   const [agents, setAgents] = useState();

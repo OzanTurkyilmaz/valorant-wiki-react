@@ -1,0 +1,149 @@
+@import "../mixin/media-query.scss";
+
+.play {
+  &_container {
+    height: 700px;
+    width: 100%;
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/playbg.jpg);
+  }
+
+  &_btn {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.text_img {
+  width: 100%;
+}
+
+.agents {
+  &_container {
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    background-image: url(../assets/agentsbg.jpg);
+
+    h1,
+    h4 {
+      color: white;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    p {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 70px;
+    }
+
+    h4 {
+      font-size: 30px;
+    }
+  }
+
+  &_box {
+    height: 700px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &_btn {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+.maps {
+  &_container {
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    background-image: url(../assets/mapsbg.jpg);
+
+    h1 {
+      font-size: 70px;
+    }
+
+    h1,
+    h4 {
+      color: white;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    p {
+      width: 50%;
+    }
+
+    h4 {
+      font-size: 30px;
+    }
+  }
+  &_box {
+    margin-left: 20px;
+  }
+  &_btn {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@include mq(desktop, max) {
+  .maps {
+    &_container {
+      h1 {
+        font-size: 50px;
+      }
+      h4 {
+        font-size: 25px;
+      }
+    }
+  }
+  .agents {
+    &_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: flex-start;
+    }
+    &_box{
+      width: 100%;
+    }
+  }
+}

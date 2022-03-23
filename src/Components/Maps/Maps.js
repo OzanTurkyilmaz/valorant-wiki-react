@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import React, { useEffect, useState } from "react";
-import "./Maps.css";
+import "./Maps.scss";
 
 export default function Maps() {
   const [maps , setMaps] = useState() 
@@ -16,10 +16,10 @@ export default function Maps() {
     <div>
     {maps?.map(map => (
       <Row className="map_container">
-      <Col span={6} className="name_box">
+      <Col span={12} className="name_box">
         {map.displayName}
       </Col>
-      <Col span={18} className="img_box">
+      <Col span={12} className="img_box">
         <img alt="map" src={map.listViewIcon}>
         </img>
       </Col>

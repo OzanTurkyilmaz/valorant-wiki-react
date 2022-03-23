@@ -1,4 +1,5 @@
 @import "../../variables.scss";
+@import "../../mixin/media-query.scss";
 
 .nav {
   &_container {
@@ -36,5 +37,35 @@
   font-size: 35px;
   a {
     color: $primary-color;
+  }
+}
+
+@include mq(desktop, max) {
+  .homepage{
+    &_name{
+      visibility: hidden;
+    }
+
+    &_logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .nav_links{
+    margin-left: -150px;
+  }
+  
+}
+
+@include mq(tablet, max) {
+  .nav{
+    &_container{
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      justify-content: space-around;
+    }
   }
 }

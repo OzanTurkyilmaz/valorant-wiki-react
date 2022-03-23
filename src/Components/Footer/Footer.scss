@@ -1,12 +1,11 @@
 .footer {
-    background-color: rgb(63, 57, 57);
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  background-color: rgb(63, 57, 57);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.footer_container {
+  &_container {
     background-color: rgb(63, 57, 57);
     height: 100px;
     width: 80%;
@@ -14,10 +13,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.footer_logo {
+  &_logo {
     height: 30px;
     width: 30px;
     margin: 0 10px;
+  }
 }

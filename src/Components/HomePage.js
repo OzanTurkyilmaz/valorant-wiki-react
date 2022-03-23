@@ -1,6 +1,6 @@
 import { Button } from "antd";
 import React from "react";
-import "./HomePage.css";
+import "./HomePage.scss";
 import { Link } from "react-router-dom";
 
 export default function HomePage() {
@@ -53,7 +53,7 @@ export default function HomePage() {
               Purpose-built for team strategies, spectacular plays, and clutch
               moments. Make the play others will imitate for years to come.
             </p>
-            <Link to="/maps">
+            <Link className="maps_link" to="/maps">
               <Button className="maps_btn" danger>
                 View All Maps
               </Button>

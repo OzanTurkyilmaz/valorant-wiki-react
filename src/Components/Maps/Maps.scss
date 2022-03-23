@@ -1,7 +1,10 @@
+@import "../../variables.scss" ;
+
+
 .map_container {
     display: flex;
     flex-direction: row;
-    background-color: #FF4655;
+    background-color: $primary-color;
     margin-top: 15px;
     color: white;
     font-weight: bold;
@@ -17,3 +20,4 @@
     align-items: center;
     font-size: 45px;
 }
+
